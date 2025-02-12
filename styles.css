@@ -23,12 +23,10 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     padding: 24px;
     position: relative;
-    overflow: hidden;
 }
 
 .card-wrapper {
-    height: auto;
-    min-height: 520px;
+    height: 520px;
     position: relative;
     margin: 20px 0;
     perspective: 1000px;
@@ -39,7 +37,7 @@ body {
     height: 100%;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    position: relative;
+    position: absolute;
     width: 100%;
     cursor: grab;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -94,6 +92,23 @@ body {
     color: #6b7280;
     padding: 0 12px;
     font-size: 0.9rem;
+}
+
+.skip-btn {
+    background: #6b7280;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.skip-btn:hover {
+    background: #4b5563;
+    transform: translateY(-2px);
 }
 
 .progress {
@@ -197,8 +212,7 @@ body {
     }
 
     .card-wrapper {
-        height: auto;
-        min-height: 480px;
+        height: 480px;
     }
 
     .question {
@@ -207,19 +221,5 @@ body {
 
     .context {
         font-size: 0.9rem;
-    }
-
-    .recommended-major {
-        font-size: 1.2rem;
-        padding: 16px;
-    }
-
-    .major-match {
-        padding: 10px;
-    }
-
-    .restart-btn {
-        padding: 14px 28px;
-        font-size: 1rem;
     }
 }
