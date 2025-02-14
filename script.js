@@ -16,135 +16,136 @@ const majors = {
     AI_DATA: "Artificial Intelligence and Data Technology: Industrial Systems"
 };
 
-// Updated Questions array with 25 questions
+// Updated Questions array with 25 indirect and varied questions
 const questions = [
     {
-        question: "Do you enjoy solving complex problems that require logical thinking?",
-        context: "Consider your approach to challenging tasks",
-        weights: {SOFTWARE: 2, AI_DATA: 2, DIGITAL_IND: 1}
+        question: "Do you find satisfaction in seeing a project come to life from a blueprint?",
+        context: "Think about your interest in turning ideas into tangible results",
+        weights: {CIVIL: 2, MECH_DESIGN: 1, MECH_STRUCT: 1}
     },
     {
-        question: "Are you interested in designing and building structures like bridges or buildings?",
-        context: "Think about your interest in construction and design",
-        weights: {CIVIL: 2, MECH_STRUCT: 1}
-    },
-    {
-        question: "Do you like working with machines and understanding how they operate?",
-        context: "Consider your interest in mechanical systems",
-        weights: {MECH_DESIGN: 2, MAINT_CTRL: 1, MATERIALS: 1}
-    },
-    {
-        question: "Are you fascinated by how data can be used to make decisions?",
-        context: "Think about your interest in data analysis",
-        weights: {AI_DATA: 2, SOFTWARE: 1, DIGITAL_IND: 1}
-    },
-    {
-        question: "Do you enjoy optimizing processes to make them more efficient?",
-        context: "Consider your interest in process improvement",
+        question: "Are you intrigued by how small changes can improve the efficiency of a system?",
+        context: "Consider your interest in optimization and fine-tuning",
         weights: {OP_EXCL: 2, IND_PROD: 1, ENERGY: 1}
     },
     {
-        question: "Are you interested in renewable energy and sustainable systems?",
-        context: "Think about your passion for environmental solutions",
-        weights: {ENERGY: 2, MATERIALS: 1, CIVIL: 1}
+        question: "Do you enjoy working with your hands to build or repair things?",
+        context: "Think about your preference for practical, hands-on tasks",
+        weights: {MAINT_CTRL: 2, MECH_DESIGN: 1, MATERIALS: 1}
     },
     {
-        question: "Do you like working with software and developing applications?",
-        context: "Consider your interest in programming",
-        weights: {SOFTWARE: 2, AI_DATA: 1, DIGITAL_IND: 1}
-    },
-    {
-        question: "Are you curious about how materials behave under different conditions?",
-        context: "Think about your interest in material science",
-        weights: {MATERIALS: 2, MECH_STRUCT: 1, CIVIL: 1}
-    },
-    {
-        question: "Do you enjoy working in teams to solve large-scale problems?",
-        context: "Consider your teamwork and collaboration skills",
-        weights: {IND_PROD: 2, OP_EXCL: 1, CIVIL: 1}
-    },
-    {
-        question: "Are you interested in robotics and automation?",
-        context: "Think about your interest in automated systems",
-        weights: {DIGITAL_IND: 2, MECH_DESIGN: 1, AI_DATA: 1}
-    },
-    // Add 15 more questions here to make it 25 in total
-    {
-        question: "Do you enjoy working on projects that involve a lot of creativity?",
-        context: "Think about your interest in creative problem-solving",
-        weights: {MECH_DESIGN: 2, SOFTWARE: 1, AI_DATA: 1}
-    },
-    {
-        question: "Are you interested in the development of smart cities?",
-        context: "Consider your interest in urban planning and technology",
-        weights: {CIVIL: 2, DIGITAL_IND: 1, AI_DATA: 1}
-    },
-    {
-        question: "Do you like to analyze and improve manufacturing processes?",
-        context: "Think about your interest in production and efficiency",
-        weights: {IND_PROD: 2, OP_EXCL: 1, MATERIALS: 1}
-    },
-    {
-        question: "Are you interested in the design of energy-efficient systems?",
-        context: "Consider your interest in energy conservation",
-        weights: {ENERGY: 2, MECH_DESIGN: 1, CIVIL: 1}
-    },
-    {
-        question: "Do you enjoy working with 3D modeling and CAD software?",
-        context: "Think about your interest in design and visualization",
-        weights: {MECH_DESIGN: 2, SOFTWARE: 1, MATERIALS: 1}
-    },
-    {
-        question: "Are you interested in the development of autonomous vehicles?",
-        context: "Consider your interest in robotics and AI",
-        weights: {AI_DATA: 2, DIGITAL_IND: 1, MECH_DESIGN: 1}
-    },
-    {
-        question: "Do you like to work on projects that involve environmental sustainability?",
-        context: "Think about your interest in green technologies",
+        question: "Are you curious about how natural forces like wind or water can be harnessed for energy?",
+        context: "Consider your interest in renewable energy sources",
         weights: {ENERGY: 2, CIVIL: 1, MATERIALS: 1}
     },
     {
-        question: "Are you interested in the development of medical devices?",
-        context: "Consider your interest in healthcare technology",
-        weights: {MECH_DESIGN: 2, MATERIALS: 1, SOFTWARE: 1}
+        question: "Do you like the idea of creating systems that can operate without human intervention?",
+        context: "Think about your interest in automation and self-sustaining systems",
+        weights: {DIGITAL_IND: 2, AI_DATA: 1, MAINT_CTRL: 1}
     },
     {
-        question: "Do you enjoy working on projects that involve data visualization?",
-        context: "Think about your interest in presenting data effectively",
+        question: "Are you fascinated by how materials can be transformed into something entirely new?",
+        context: "Consider your interest in material science and manufacturing",
+        weights: {MATERIALS: 2, MECH_DESIGN: 1, CIVIL: 1}
+    },
+    {
+        question: "Do you enjoy solving puzzles that require both creativity and logic?",
+        context: "Think about your approach to complex challenges",
+        weights: {SOFTWARE: 2, AI_DATA: 1, MECH_DESIGN: 1}
+    },
+    {
+        question: "Are you interested in how cities and communities are planned and developed?",
+        context: "Consider your interest in urban planning and infrastructure",
+        weights: {CIVIL: 2, OP_EXCL: 1, IND_PROD: 1}
+    },
+    {
+        question: "Do you like the idea of designing products that people use every day?",
+        context: "Think about your interest in consumer products and usability",
+        weights: {MECH_DESIGN: 2, MATERIALS: 1, IND_PROD: 1}
+    },
+    {
+        question: "Are you drawn to understanding how machines and systems fail and how to prevent it?",
+        context: "Consider your interest in reliability and maintenance",
+        weights: {MAINT_CTRL: 2, MECH_STRUCT: 1, ENERGY: 1}
+    },
+    {
+        question: "Do you enjoy analyzing patterns and trends in data?",
+        context: "Think about your interest in data-driven decision-making",
         weights: {AI_DATA: 2, SOFTWARE: 1, DIGITAL_IND: 1}
     },
     {
-        question: "Are you interested in the development of renewable energy technologies?",
-        context: "Consider your interest in sustainable energy solutions",
-        weights: {ENERGY: 2, MATERIALS: 1, CIVIL: 1}
+        question: "Are you interested in how technology can improve the quality of life for people?",
+        context: "Consider your interest in human-centered design and innovation",
+        weights: {DIGITAL_IND: 2, SOFTWARE: 1, MECH_DESIGN: 1}
     },
     {
-        question: "Do you like to work on projects that involve artificial intelligence?",
-        context: "Think about your interest in AI and machine learning",
-        weights: {AI_DATA: 2, SOFTWARE: 1, DIGITAL_IND: 1}
+        question: "Do you like the idea of working on projects that have a long-lasting impact?",
+        context: "Think about your interest in legacy and sustainability",
+        weights: {CIVIL: 2, ENERGY: 1, MATERIALS: 1}
     },
     {
-        question: "Are you interested in the development of smart home technologies?",
-        context: "Consider your interest in IoT and home automation",
-        weights: {DIGITAL_IND: 2, SOFTWARE: 1, AI_DATA: 1}
+        question: "Are you curious about how energy is generated and distributed across a network?",
+        context: "Consider your interest in energy systems and infrastructure",
+        weights: {ENERGY: 2, CIVIL: 1, OP_EXCL: 1}
     },
     {
-        question: "Do you enjoy working on projects that involve structural analysis?",
-        context: "Think about your interest in building and structural integrity",
-        weights: {CIVIL: 2, MECH_STRUCT: 1, MATERIALS: 1}
+        question: "Do you enjoy working on projects that require collaboration across different fields?",
+        context: "Think about your interest in interdisciplinary work",
+        weights: {IND_PROD: 2, OP_EXCL: 1, DIGITAL_IND: 1}
     },
     {
-        question: "Are you interested in the development of aerospace technologies?",
-        context: "Consider your interest in aviation and space exploration",
-        weights: {MECH_DESIGN: 2, MATERIALS: 1, ENERGY: 1}
+        question: "Are you fascinated by how structures withstand forces like earthquakes or heavy loads?",
+        context: "Consider your interest in structural integrity and resilience",
+        weights: {MECH_STRUCT: 2, CIVIL: 1, MATERIALS: 1}
     },
     {
-        question: "Do you like to work on projects that involve the Internet of Things (IoT)?",
-        context: "Think about your interest in connected devices and systems",
-        weights: {DIGITAL_IND: 2, SOFTWARE: 1, AI_DATA: 1}
+        question: "Do you like the idea of creating systems that are both efficient and environmentally friendly?",
+        context: "Think about your interest in sustainable engineering",
+        weights: {ENERGY: 2, CIVIL: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you interested in how technology can be used to solve global challenges?",
+        context: "Consider your interest in large-scale problem-solving",
+        weights: {AI_DATA: 2, DIGITAL_IND: 1, SOFTWARE: 1}
+    },
+    {
+        question: "Do you enjoy working on projects that involve both creativity and technical precision?",
+        context: "Think about your interest in balancing art and science",
+        weights: {MECH_DESIGN: 2, SOFTWARE: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you drawn to understanding how systems can be made more resilient to failure?",
+        context: "Consider your interest in reliability and risk management",
+        weights: {MAINT_CTRL: 2, MECH_STRUCT: 1, OP_EXCL: 1}
+    },
+    {
+        question: "Do you like the idea of designing systems that adapt to changing conditions?",
+        context: "Think about your interest in dynamic and flexible systems",
+        weights: {DIGITAL_IND: 2, AI_DATA: 1, SOFTWARE: 1}
+    },
+    {
+        question: "Are you interested in how technology can improve safety in workplaces?",
+        context: "Consider your interest in industrial safety and innovation",
+        weights: {OP_EXCL: 2, MAINT_CTRL: 1, IND_PROD: 1}
+    },
+    {
+        question: "Do you enjoy working on projects that involve both analysis and hands-on implementation?",
+        context: "Think about your interest in combining theory and practice",
+        weights: {MECH_DESIGN: 2, MATERIALS: 1, MAINT_CTRL: 1}
+    },
+    {
+        question: "Are you fascinated by how technology can transform traditional industries?",
+        context: "Consider your interest in modernization and innovation",
+        weights: {DIGITAL_IND: 2, AI_DATA: 1, SOFTWARE: 1}
+    },
+    {
+        question: "Do you like the idea of working on projects that require both technical skills and creative problem-solving?",
+        context: "Think about your interest in multidisciplinary challenges",
+        weights: {SOFTWARE: 2, MECH_DESIGN: 1, AI_DATA: 1}
     }
 ];
+
+// Rest of the script.js file remains unchanged...
 
 // State variables
 let currentQuestion = 0;
