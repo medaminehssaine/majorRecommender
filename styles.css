@@ -13,6 +13,7 @@ body {
     justify-content: center;
     padding: 20px;
     color: #1f2937;
+    overflow: hidden; /* Prevent body overflow */
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     padding: 24px;
     position: relative;
+    overflow: hidden; /* Prevent container overflow */
 }
 
 .card-wrapper {
@@ -30,6 +32,7 @@ body {
     position: relative;
     margin: 20px 0;
     perspective: 1000px;
+    overflow: hidden; /* Prevent card wrapper overflow */
 }
 
 .card {
@@ -42,7 +45,7 @@ body {
     cursor: grab;
     transition: transform 0.3s, box-shadow 0.3s;
     user-select: none;
-    overflow: hidden;
+    overflow: hidden; /* Prevent card overflow */
     display: flex;
     flex-direction: column;
 }
@@ -71,6 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto; /* Allow scrolling within the card content */
 }
 
 .question {
