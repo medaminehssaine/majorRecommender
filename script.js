@@ -16,7 +16,7 @@ const majors = {
     AI_DATA: "Artificial Intelligence and Data Technology: Industrial Systems"
 };
 
-// Updated Questions array
+// Updated Questions array with 25 questions
 const questions = [
     {
         question: "Do you enjoy solving complex problems that require logical thinking?",
@@ -67,6 +67,82 @@ const questions = [
         question: "Are you interested in robotics and automation?",
         context: "Think about your interest in automated systems",
         weights: {DIGITAL_IND: 2, MECH_DESIGN: 1, AI_DATA: 1}
+    },
+    // Add 15 more questions here to make it 25 in total
+    {
+        question: "Do you enjoy working on projects that involve a lot of creativity?",
+        context: "Think about your interest in creative problem-solving",
+        weights: {MECH_DESIGN: 2, SOFTWARE: 1, AI_DATA: 1}
+    },
+    {
+        question: "Are you interested in the development of smart cities?",
+        context: "Consider your interest in urban planning and technology",
+        weights: {CIVIL: 2, DIGITAL_IND: 1, AI_DATA: 1}
+    },
+    {
+        question: "Do you like to analyze and improve manufacturing processes?",
+        context: "Think about your interest in production and efficiency",
+        weights: {IND_PROD: 2, OP_EXCL: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you interested in the design of energy-efficient systems?",
+        context: "Consider your interest in energy conservation",
+        weights: {ENERGY: 2, MECH_DESIGN: 1, CIVIL: 1}
+    },
+    {
+        question: "Do you enjoy working with 3D modeling and CAD software?",
+        context: "Think about your interest in design and visualization",
+        weights: {MECH_DESIGN: 2, SOFTWARE: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you interested in the development of autonomous vehicles?",
+        context: "Consider your interest in robotics and AI",
+        weights: {AI_DATA: 2, DIGITAL_IND: 1, MECH_DESIGN: 1}
+    },
+    {
+        question: "Do you like to work on projects that involve environmental sustainability?",
+        context: "Think about your interest in green technologies",
+        weights: {ENERGY: 2, CIVIL: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you interested in the development of medical devices?",
+        context: "Consider your interest in healthcare technology",
+        weights: {MECH_DESIGN: 2, MATERIALS: 1, SOFTWARE: 1}
+    },
+    {
+        question: "Do you enjoy working on projects that involve data visualization?",
+        context: "Think about your interest in presenting data effectively",
+        weights: {AI_DATA: 2, SOFTWARE: 1, DIGITAL_IND: 1}
+    },
+    {
+        question: "Are you interested in the development of renewable energy technologies?",
+        context: "Consider your interest in sustainable energy solutions",
+        weights: {ENERGY: 2, MATERIALS: 1, CIVIL: 1}
+    },
+    {
+        question: "Do you like to work on projects that involve artificial intelligence?",
+        context: "Think about your interest in AI and machine learning",
+        weights: {AI_DATA: 2, SOFTWARE: 1, DIGITAL_IND: 1}
+    },
+    {
+        question: "Are you interested in the development of smart home technologies?",
+        context: "Consider your interest in IoT and home automation",
+        weights: {DIGITAL_IND: 2, SOFTWARE: 1, AI_DATA: 1}
+    },
+    {
+        question: "Do you enjoy working on projects that involve structural analysis?",
+        context: "Think about your interest in building and structural integrity",
+        weights: {CIVIL: 2, MECH_STRUCT: 1, MATERIALS: 1}
+    },
+    {
+        question: "Are you interested in the development of aerospace technologies?",
+        context: "Consider your interest in aviation and space exploration",
+        weights: {MECH_DESIGN: 2, MATERIALS: 1, ENERGY: 1}
+    },
+    {
+        question: "Do you like to work on projects that involve the Internet of Things (IoT)?",
+        context: "Think about your interest in connected devices and systems",
+        weights: {DIGITAL_IND: 2, SOFTWARE: 1, AI_DATA: 1}
     }
 ];
 
